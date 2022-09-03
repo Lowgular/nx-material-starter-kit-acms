@@ -1,0 +1,62 @@
+{
+  "workspace": {
+    "workspaceConfig": "angular.json",
+    "workspaceTsConfig": "tsconfig.base.json",
+    "libsFolder": "libs"
+  },
+  "entityRelations": {
+    "component": {
+      "service": "CONSTRUCTOR",
+      "component": "HTML",
+      "activatedRoute": "CONSTRUCTOR"
+    },
+    "model": {
+      "model": "PROPERTY"
+    },
+    "service": {
+      "model": "RETURN",
+      "httpClient": "CONSTRUCTOR"
+    }
+  },
+  "external": {
+    "httpClient": {
+      "id": "httpClient",
+      "type": "HttpClient",
+      "module": "@angular/common/http"
+    },
+    "activatedRoute": {
+      "id": "activatedRoute",
+      "type": "ActivatedRoute",
+      "module": "@angular/router"
+    }
+  },
+  "entities": {
+    "component": {
+      "id": "component",
+      "type": "ANGULAR_COMPONENT",
+      "suffix": "Component",
+      "folder": "components",
+      "insideOf": "App",
+      "config": {
+        "stylesExtension": "scss",
+        "viewEncapsulation": "None",
+        "selector": "generated",
+        "changeDetectionStrategy": "OnPush"
+      }
+    },
+    "model": {
+      "id": "model",
+      "type": "DATA_STRUCTURE",
+      "suffix": "Model",
+      "folder": "models",
+      "insideOf": "App"
+    },
+    "service": {
+      "id": "service",
+      "type": "SERVICE",
+      "suffix": "Service",
+      "folder": "services",
+      "insideOf": "App"
+    }
+  }
+}

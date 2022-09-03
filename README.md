@@ -1,98 +1,67 @@
-# LowgularAcms
+# Lowgular Nx Starter Kit App only Component Model Service
 
-This project was generated using [Nx](https://nx.dev).
+This project was generated using [Lowgular](https://www.lowgular.io).
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+<p style="text-align: center;"><img src="https://avatars.githubusercontent.com/u/109138416" width="450"></p>
 
-🔎 **Smart, Fast and Extensible Build System**
+🔎 **Angular Code Generation made smarter...**
 
 ## Quick Start & Documentation
 
-[Nx Documentation](https://nx.dev/angular)
+[Courses](https://courses.lowgular.edu.pl)
 
-[10-minute video showing all Nx features](https://nx.dev/getting-started/intro)
+[Follow us on Linked In](https://www.linkedin.com/company/lowgular)
 
-[Interactive Tutorial](https://nx.dev/react-tutorial/01-create-application)
+[Facebook](https://www.facebook.com/Lowgular/)
 
-## Adding capabilities to your workspace
+## Architecture
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+This is a starter kit for Nx with Lowgular and Simple Architecture
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+It is app-only approach, meaning we create everything in `application` project type
 
-Below are our core plugins:
+The architecture consists of 3 main parts:
 
-- [Angular](https://angular.io)
-  - `ng add @nrwl/angular`
-- [React](https://reactjs.org)
-  - `ng add @nrwl/react`
-- Web (no framework frontends)
-  - `ng add @nrwl/web`
-- [Nest](https://nestjs.com)
-  - `ng add @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `ng add @nrwl/express`
-- [Node](https://nodejs.org)
-  - `ng add @nrwl/node`
+### Model
 
-There are also many [community plugins](https://nx.dev/community) you could add.
+A Readonly Interface representing data fetched from backend and needed in the `Component`
 
-## Generate an application
+### Service
 
-Run `ng g @nrwl/angular:app my-app` to generate an application.
+Angular Injectable responsible for fetching data from backend.
+You can inject `HttpClient` in it
+It returns `Model`
 
-> You can use any of the plugins above to generate applications as well.
+### Component
 
-When using Nx, you can create multiple applications and libraries in the same workspace.
+Angular Component responsible for presenting data on a specific route.
+You can inject `Service` in it
+It uses `Model` to present the data
 
-## Generate a library
+## Plugin
 
-Run `ng g @nrwl/angular:lib my-lib` to generate a library.
+### IntelliJ
 
-> You can also use any of the plugins above to generate libraries as well.
+Go to marketplace and search for angular, then find our logo :)
 
-Libraries are shareable across libraries and applications. They can be imported from `@lowgular-acms/mylib`.
+In case of trouble you can search for "lowgular" or access this [Marketplace Link](https://plugins.jetbrains.com/plugin/19740-lowgular)
 
-## Development server
+### VScode
 
-Run `ng serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Coming soon...
 
-## Code scaffolding
+## How to use it?
 
-Run `ng g component my-component --project=my-app` to generate a new component.
+It is super simple, just "Keep Calm and right click!"
 
-## Build
+Access available actions: Open a file, right click in the editor and select: <img src="https://avatars.githubusercontent.com/u/109138416" width="20">`Actions...`
 
-Run `ng build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Create New: Right click in the project tree, selected `New` > <img src="https://avatars.githubusercontent.com/u/109138416" width="20"> `Create New...`
 
-## Running unit tests
+Create Library: Right click in the project tree, selected `New` > <img src="https://avatars.githubusercontent.com/u/109138416" width="20"> `Create Library`
 
-Run `ng test my-app` to execute the unit tests via [Jest](https://jestjs.io).
+## Summary
 
-Run `nx affected:test` to execute the unit tests affected by a change.
+There are endless capabilities and soon we will document most of them
 
-## Running end-to-end tests
-
-Run `ng e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev/angular) to learn more.
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+Visit [Lowgular](https://www.lowgular.io/) to learn more.
