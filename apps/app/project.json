@@ -1,7 +1,7 @@
 {
   "projectType": "application",
   "sourceRoot": "apps/app/src",
-  "prefix": "lowgular-acms",
+  "prefix": "app",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
