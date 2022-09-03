@@ -1,4 +1,4 @@
-# Lowgular Nx Starter Kit App only Component Model Service
+# Lowgular Nx Material Starter Kit App only Component Model Service
 
 This project was generated using [Lowgular](https://www.lowgular.io).
 
