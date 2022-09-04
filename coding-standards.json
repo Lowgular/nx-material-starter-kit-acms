@@ -14,7 +14,7 @@
       "model": "PROPERTY"
     },
     "service": {
-      "model": "RETURN",
+      "model": "PARAMETER_AND_RETURN",
       "httpClient": "CONSTRUCTOR"
     }
   },
