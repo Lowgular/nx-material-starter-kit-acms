@@ -1,0 +1,5 @@
+{
+  "input": "<div><mat-form-field appearance=\"fill\"><mat-label>$label$</mat-label><input matInput type=\"$type$\" placeholder=\"$label$\" formControlName=\"$formControlName$\" required><mat-error *ngIf=\"$formVariable$.get('$formControlName$')!.invalid\">$formControlName$ is invalid</mat-error></mat-form-field></div>",
+  "formSubmit": "<div><button type=\"submit\" mat-raised-button color=\"primary\">Submit</button></div>",
+  "form": "<form [formGroup]=\"$formVariable$\" (ngSubmit)=\"$submitCallback$\">$content$</form>"
+}
