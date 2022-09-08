@@ -1,5 +1,21 @@
 {
-  "input": "<div><mat-form-field appearance=\"fill\"><mat-label>$label$</mat-label><input matInput type=\"$type$\" placeholder=\"$label$\" formControlName=\"$formControlName$\" required><mat-error *ngIf=\"$formVariable$.get('$formControlName$')!.invalid\">$formControlName$ is invalid</mat-error></mat-form-field></div>",
-  "formSubmit": "<div><button type=\"submit\" mat-raised-button color=\"primary\">Submit</button></div>",
-  "form": "<form [formGroup]=\"$formVariable$\" (ngSubmit)=\"$submitCallback$\">$content$</form>"
+  "inputs": {
+    "input-default": "<input matInput type=\"text\" placeholder=\"$placeholder$\" formControlName=\"$formControlName$\" required>",
+    "input-text": "<input matInput type=\"text\" placeholder=\"$placeholder$\" formControlName=\"$formControlName$\" required>",
+    "input-number": "<input matInput type=\"number\" placeholder=\"$placeholder$\" formControlName=\"$formControlName$\" required>",
+    "input-submit": "<button type=\"submit\" mat-raised-button color=\"primary\">$content$</button>"
+  },
+  "forms": {
+    "mat-form": {
+      "input": "<div><mat-form-field appearance=\"fill\"><mat-label>$label$</mat-label>$inputs.input-text$<mat-error *ngIf=\"$formVariable$.get('$formControlName$')!.invalid\">$formControlName$ is invalid</mat-error></mat-form-field></div>",
+      "formSubmit": "<div>$inputs.input-submit$</div>",
+      "form": "<form [formGroup]=\"$formVariable$\" (ngSubmit)=\"$submitCallback$\">$content$</form>"
+    }
+  },
+  "lists": {
+    "mat-list": {
+      "list": "<mat-list role=\"list\" class=\"mat-elevation-z8\">$content$</mat-list>",
+      "item": "<mat-list-item role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">$content$</mat-list-item>"
+    }
+  }
 }
