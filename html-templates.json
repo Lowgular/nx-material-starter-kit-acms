@@ -1,8 +1,18 @@
 {
+  "lines": {
+    "paragraph": "<p>$content$</p>"
+  },
+  "cards": {
+    "simple": "<mat-card *ngIf=\"$itemVariable$\">$itemVariable$</mat-card>"
+  },
+  "layouts": {
+    "card": "<mat-card><mat-card-title></mat-card-title><mat-card-content></mat-card-content></mat-card>",
+    "toolbar": "<mat-toolbar color=\"primary\"></mat-toolbar>"
+  },
   "inputs": {
-    "input-default": "<input matInput type=\"text\" placeholder=\"$placeholder$\" formControlName=\"$formControlName$\" required>",
-    "input-text": "<input matInput type=\"text\" placeholder=\"$placeholder$\" formControlName=\"$formControlName$\" required>",
-    "input-number": "<input matInput type=\"number\" placeholder=\"$placeholder$\" formControlName=\"$formControlName$\" required>",
+    "input-default": "<input matInput type=\"text\" placeholder=\"$label$\" formControlName=\"$formControlName$\" required>",
+    "input-text": "<input matInput type=\"text\" placeholder=\"$label$\" formControlName=\"$formControlName$\" required>",
+    "input-number": "<input matInput type=\"number\" placeholder=\"$label$\" formControlName=\"$formControlName$\" required>",
     "input-submit": "<button type=\"submit\" mat-raised-button color=\"primary\">$content$</button>"
   },
   "forms": {
@@ -13,9 +23,13 @@
     }
   },
   "lists": {
-    "mat-list": {
+    "list": {
       "list": "<mat-list role=\"list\" class=\"mat-elevation-z8\">$content$</mat-list>",
-      "item": "<mat-list-item role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">$content$</mat-list-item>"
+      "item": "<mat-list-item role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">$itemVariable$</mat-list-item>"
+    },
+    "navbar": {
+      "list": "<mat-list role=\"list\" fxLayout=\"row\">$content$</mat-list>",
+      "item": "<mat-list-item role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">{{$itemVariable$}}</mat-list-item>"
     }
   }
 }

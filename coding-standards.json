@@ -2,7 +2,6 @@
   "entityRelations": {
     "component": {
       "service": "CONSTRUCTOR",
-      "component": "HTML",
       "activatedRoute": "CONSTRUCTOR"
     },
     "model": {
@@ -30,7 +29,7 @@
       "id": "component",
       "type": "ANGULAR_COMPONENT",
       "suffix": "Component",
-      "folder": "components",
+      "folder": "components/$name$",
       "insideOf": "App",
       "config": {
         "stylesExtension": "scss",
