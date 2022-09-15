@@ -2,7 +2,8 @@
   "entityRelations": {
     "component": {
       "service": "CONSTRUCTOR",
-      "activatedRoute": "CONSTRUCTOR"
+      "activatedRoute": "CONSTRUCTOR",
+      "router": "CONSTRUCTOR"
     },
     "model": {
       "model": "PROPERTY"
@@ -22,6 +23,11 @@
       "id": "activatedRoute",
       "type": "ActivatedRoute",
       "module": "@angular/router"
+    },
+    "router": {
+      "id": "router",
+      "type": "Router",
+      "module": "@angular/router"
     }
   },
   "entities": {
@@ -32,7 +38,7 @@
       "folder": "components/$name$",
       "insideOf": "App",
       "config": {
-        "stylesExtension": "scss",
+        "stylesExtension": "none",
         "viewEncapsulation": "None",
         "selector": "generated",
         "changeDetectionStrategy": "OnPush"
