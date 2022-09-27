@@ -1,0 +1,31 @@
+{
+  "entities": {
+    "component": {
+      "id": "component",
+      "type": "ANGULAR_COMPONENT",
+      "suffix": "Component",
+      "folder": "components/$name$",
+      "insideOf": "App",
+      "config": {
+        "stylesExtension": "none",
+        "viewEncapsulation": "None",
+        "selector": "generated",
+        "changeDetectionStrategy": "OnPush"
+      }
+    },
+    "model": {
+      "id": "model",
+      "type": "DATA_STRUCTURE",
+      "suffix": "Model",
+      "folder": "models",
+      "insideOf": "App"
+    },
+    "service": {
+      "id": "service",
+      "type": "SERVICE",
+      "suffix": "Service",
+      "folder": "services",
+      "insideOf": "App"
+    }
+  }
+}

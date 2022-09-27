@@ -1,0 +1,10 @@
+<form [formGroup]="form" (ngSubmit)="onFormSubmitted(form)">
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" placeholder="Name" formControlName="name" required>
+      <mat-error *ngIf="form.get('name')!.invalid">name is invalid</mat-error>
+    </mat-form-field></div><div><mat-form-field appearance="fill">
+  <mat-label>Priority</mat-label>
+  <input matInput type="text" placeholder="Priority" formControlName="priority" required><mat-error *ngIf="form.get('priority')!.invalid">priority is invalid</mat-error>
+</mat-form-field></div><div><button type="submit" mat-raised-button color="primary">Submit</button></div></form>
